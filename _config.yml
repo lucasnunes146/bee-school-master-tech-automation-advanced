@@ -2,8 +2,3 @@ title: Bee School Master Tech | Automation Advanced
 description: Jam-in-a-Box — conteúdo completo dos labs do waiops-tech-jam (Instana, Turbonomic, Cloud Pak for AIOps, Concert)
 theme: jekyll-theme-cayman
 markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md,mdx"
-include:
-  - "_category_.json"
-
-
