@@ -1,0 +1,62 @@
+---
+title: Quiz Time!
+description: Quiz
+sidebar_label: Quiz
+sidebar_position: 5
+---
+
+import MultiChoiceQuestion from "@site/src/components/multiChoice/multiChoice"
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+  }}>
+
+<MultiChoiceQuestion
+  questionNumber="1"
+  question="Which of the following is not an Instana on-premises deployment option?"
+  answers={[
+    "Custom Edition",
+    "Standard Edition (K3s)",
+    "Instana Appliance",
+    "Classic Edition (Docker)",
+  ]}
+  correctAnswer="Instana Appliance"
+/>
+
+<MultiChoiceQuestion
+  questionNumber="2"
+  question="On-premises releases are odd number?"
+  answers={["True", "False"]}
+  correctAnswer="True"
+/>
+
+<MultiChoiceQuestion
+  questionNumber="3"
+  question="Feature Flags for **Standard Edition** Instana backend can be anabled by?"
+  answers={[
+    "Updating the **configuration.yaml** file",
+    "Updating the **settings.hcl** file",
+    "Specify the --core-feature-flags flag with **stanctl backend apply**",
+    "Editing the **instana configmap**",
+  ]}
+  correctAnswer="Specify the --core-feature-flags flag with **stanctl backend apply**"
+/>
+
+<MultiChoiceQuestion
+  questionNumber="4"
+  question="When installing the Instana Agent on a Linux host are you able to install and start the agent as a service on SystemD based systems?"
+  answers={["Yes", "No"]}
+  correctAnswer="Yes"
+/>
+
+<MultiChoiceQuestion
+  questionNumber="5"
+  question="Which of the following is not a supported technology for deploying the Instana Agent on OpenShift?"
+  answers={["YAML", "Bash Script", "Operator", "Helm Chart"]}
+  correctAnswer="Bash Script"
+/>
+
+</div>
